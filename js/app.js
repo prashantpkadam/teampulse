@@ -18,3 +18,18 @@ document.getElementById("search-box").addEventListener("input", (e) => {
     li.style.display = li.textContent.toLowerCase().includes(query) ? "" : "none";
   });
 });
+
+function updateCount() {
+  const visible = Array.from(document.querySelectorAll("#team-list li"))
+    .filter(li => li.style.display !== "none").length;
+  document.getElementById("team-count").textContent =
+    `Showing ${visible} team member${visible === 1 ? "" : "s"}`;
+}
+ 
+// Call once after initial render, then on every search input
+document.addEventListener("DOMContentLoaded", () => {
+  updateCount();
+  document.getElementById("search-box").addEventListener("input", () => {
+    setTimeout(updateCount, 0);
+  });
+});
