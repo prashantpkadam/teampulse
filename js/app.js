@@ -11,3 +11,10 @@ function renderTeam(team) {
     list.appendChild(li);
   });
 }
+
+document.getElementById("search-box").addEventListener("input", (e) => {
+  const query = e.target.value.toLowerCase();
+  document.querySelectorAll("#team-list li").forEach(li => {
+    li.style.display = li.textContent.toLowerCase().includes(query) ? "" : "none";
+  });
+});
