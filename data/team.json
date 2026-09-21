@@ -1,0 +1,5 @@
+[
+  { "name": "Priya Shah", "role": "Backend Engineer", "status": "On task: API rate limiting" },
+  { "name": "Marco Reyes", "role": "Frontend Engineer", "status": "On task: dashboard UI" },
+  { "name": "Jun Park", "role": "QA Engineer", "status": "On task: regression suite" }
+]
