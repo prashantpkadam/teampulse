@@ -2,3 +2,5 @@ body { font-family: sans-serif; margin: 2rem; }
 h1 { color: #2d2d2d; }
 #team-list { list-style: none; padding: 0; }
 #team-list li { padding: 0.5rem; border-bottom: 1px solid #ddd; }
+body.dark { background: #1e1e1e; color: #f0f0f0; }
+body.dark #team-list li { border-bottom-color: #444; }
