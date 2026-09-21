@@ -1,0 +1,4 @@
+body { font-family: sans-serif; margin: 2rem; }
+h1 { color: #2d2d2d; }
+#team-list { list-style: none; padding: 0; }
+#team-list li { padding: 0.5rem; border-bottom: 1px solid #ddd; }
