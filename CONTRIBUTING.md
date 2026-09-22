@@ -20,3 +20,5 @@
  
 6. Push to remote:
    git push
+
+## v1.0.1
